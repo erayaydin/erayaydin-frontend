@@ -1,45 +1,79 @@
-doctype html
-html(lang="en")
- head
-  meta(charset="utf-8")
-  meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1")
-  title Labkod Frontend Development Environment
-  link(rel="stylesheet" type='text/css' href='./assets/css/app.css')
+extends ./layout.jade
 
-  <!--[if lt IE 9]>
-  script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
-  script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
-  <![endif]-->
- body
-  .jumbotron
-   .container
-    h1 You did it!
-    p Labkod Frontend Development Environment
-  .container
+block title
+ title Eray Aydın &middot; Homepage
+
+block body
+ section
+  .container-fluid
    .row
+    .col-md-8
+     article.article
+      figure
+       a(href="post.html")
+        img(src="http://placehold.it/1800x350").img-responsive
+      h3
+       a(href="post.html") Installing Sudo for Arch Linux
+      .article-meta
+       p.text-muted Author: <a href="#">Eray Aydın</a> &middot; Date: 13.12.2015 &middot; Categories: <a href="#">Arch Linux</a>, <a href="#">Linux</a>
+      .article-body
+       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis ante odio, at molestie massa imperdiet in. Phasellus vitae lorem varius lectus accumsan sollicitudin. Sed vel magna velit. Mauris auctor purus justo. Praesent pretium tristique mauris at venenatis. Donec suscipit tortor vitae nisi ullamcorper, sed pretium ipsum eleifend. Sed eu tortor a tortor eleifend convallis. Proin scelerisque eget diam et fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sed venenatis risus, sit amet convallis nunc.
+      .article-footer
+       p.text-right
+        a.btn.btn-primary Read More <i class="fa fa-chevron-right"></i>
+     article.article
+      h3
+       a(href="post.html") Installing Sudo for Arch Linux
+      .article-meta
+       p.text-muted Author: <a href="#">Eray Aydın</a> &middot; Date: 13.12.2015 &middot; Categories: <a href="#">Arch Linux</a>, <a href="#">Linux</a>
+      .article-body
+       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis ante odio, at molestie massa imperdiet in. Phasellus vitae lorem varius lectus accumsan sollicitudin. Sed vel magna velit. Mauris auctor purus justo. Praesent pretium tristique mauris at venenatis. Donec suscipit tortor vitae nisi ullamcorper, sed pretium ipsum eleifend. Sed eu tortor a tortor eleifend convallis. Proin scelerisque eget diam et fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sed venenatis risus, sit amet convallis nunc.
+      .article-footer
+       p.text-right
+        a.btn.btn-primary Read More <i class="fa fa-chevron-right"></i>
+     article.article
+      h3
+       a(href="post.html") Installing Sudo for Arch Linux
+      .article-meta
+       p.text-muted Author: <a href="#">Eray Aydın</a> &middot; Date: 13.12.2015 &middot; Categories: <a href="#">Arch Linux</a>, <a href="#">Linux</a>
+      .article-body
+       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis ante odio, at molestie massa imperdiet in. Phasellus vitae lorem varius lectus accumsan sollicitudin. Sed vel magna velit. Mauris auctor purus justo. Praesent pretium tristique mauris at venenatis. Donec suscipit tortor vitae nisi ullamcorper, sed pretium ipsum eleifend. Sed eu tortor a tortor eleifend convallis. Proin scelerisque eget diam et fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sed venenatis risus, sit amet convallis nunc.
+      .article-footer
+       p.text-right
+        a.btn.btn-primary Read More <i class="fa fa-chevron-right"></i>
+     article.article
+      h3
+       a(href="post.html") Installing Sudo for Arch Linux
+      .article-meta
+       p.text-muted Author: <a href="#">Eray Aydın</a> &middot; Date: 13.12.2015 &middot; Categories: <a href="#">Arch Linux</a>, <a href="#">Linux</a>
+      .article-body
+       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis ante odio, at molestie massa imperdiet in. Phasellus vitae lorem varius lectus accumsan sollicitudin. Sed vel magna velit. Mauris auctor purus justo. Praesent pretium tristique mauris at venenatis. Donec suscipit tortor vitae nisi ullamcorper, sed pretium ipsum eleifend. Sed eu tortor a tortor eleifend convallis. Proin scelerisque eget diam et fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sed venenatis risus, sit amet convallis nunc.
+      .article-footer
+       p.text-right
+        a.btn.btn-primary Read More <i class="fa fa-chevron-right"></i>
+     nav.text-center
+      ul.pagination
+       li.disabled
+        a(href="#" aria-label="Previous")
+         span(aria-hidden="true") &laquo;
+       li.active
+        a(href="#") 1
+       li
+        a(href="#") 2
+       li
+        a(href="#") 3
+       li
+        a(href="#") 4
+       li
+        a(href="#") 5
+       li
+        a(href="#" aria-label="Next")
+         span(aria-hidden="true") &raquo;
     .col-md-4
-     h2 Gulp
-     p
-      img(src="./assets/images/gulp.png").img-responsive
-    .col-md-4
-     h2 Less
-     p
-      img(src="./assets/images/less.png").img-responsive
-    .col-md-4
-     h2 Jade
-     p
-      img(src="./assets/images/jade.png").img-responsive
-    .col-md-4
-     h2 NPM
-     p
-      img(src="./assets/images/npm.png").img-responsive
-    .col-md-4
-     h2 Browser Sync
-     p
-      img(src="./assets/images/browser.png")
-    .col-md-4
-     h2 Bower
-     p
-      img(src="./assets/images/bower.png")
-  script(src="./assets/js/app.js")
+     h3.remove-margin-t Categories
+     .list-group
+      a(href="#").list-group-item PHP
+      a(href="#").list-group-item Laravel
+      a(href="#").list-group-item Arch Linux
+      a(href="#").list-group-item Linux
+      a(href="#").list-group-item CentOS
