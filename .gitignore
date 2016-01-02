@@ -1,0 +1,10 @@
+### PhpStorm ###
+*.iml
+.idea/
+*.ipr
+*.iws
+
+
+### Linux ###
+*~
+.Trash-*
